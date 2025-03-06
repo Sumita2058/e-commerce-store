@@ -1,16 +1,17 @@
-import React from 'react';
+
 import Navbar from '../Navbar/Navbar';
-import Hero from '../Hero/Hero';
-import Shopping from '../shopping/Shopping';
+// import Hero from '../Hero/Hero';
+
 import AnimatedHeading from '../AnimatedHeading/AnimatedHeading';
 import Footer from '../Footer/Footer';
+import Shopping from '../Shopping/Shopping';
  const Home = () => {
   return (
     <div>
         <Navbar/>
-        <Hero/>
+        {/* <Hero/> */}
         <AnimatedHeading/>
-        <Shopping/>
+         <Shopping/> 
         <Footer/>
        
     </div>

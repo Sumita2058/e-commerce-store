@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+
 import { img1, img10, img2, img4, img3, img8, img9 } from "../../image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -62,16 +62,16 @@ const Shopping = () => {
           </p>
         </div>
       </div>
-      <div className="p-4 overflow-hidden">
+      <div className="p-4 max-w-800 overflow-hidden">
         <Slider {...settings}>
           {items.map((item, index) => (
-            <div key={index} className="relative rounded-2xl max-w-120">
+            <div key={index} className="relative  rounded-2xl max-w-120">
               <img
                 src={item.src}
                 alt={item.alt}
                 className="h-100 w-200 object-cover p-4 mx-auto"
               />
-              <div className="">
+              <div className="gap-2">
                 <span className="bg-orange-500 inset-4 top-86 flex items-center h-10 font-bold absolute p-4">
                   <button onClick={() => handleAddToCart(index)} className="p-8">
                     Add to Cart

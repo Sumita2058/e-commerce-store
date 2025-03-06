@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css'
 import Cart from './components/Cart/cart';
 import {Routes,Route} from "react-router-dom"
